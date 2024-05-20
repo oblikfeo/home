@@ -20,5 +20,5 @@ let second
 let operation
 
 addEventListener('click', (e) => {
-    
+    console.log()
 })
