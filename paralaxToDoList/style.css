@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: kamer;
+    src: url(fonts/kamerik205-heavy.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: marri;
+    src: url(fonts/merriweather-regular-italic.woff2);
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: kamer;
+    width: 100vw;
+}
+
+.layers {
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.layers__container {
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+}
+
+.layers__item {
+    position: fixed;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer-1 {
+    transform: translateZ(-100px) scale(1.15);
+}
+
+
+.layer-3 {
+    transform: translateZ(100px) scale(0.8);
+}
+
+.layer-4 {
+    transform: translateZ(150px) scale(0.8);
+}
+
+.layer-5 {
+    transform: translateZ(400px) scale(0.8); 
+}
+
+.layer-6 {
+    transform: translateZ(50px);
+}
+
+.title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    margin: 50% 50%;
+    line-height: 0.9;
+    text-shadow: 3px 3px black;
+    max-width: 1000px;
+}
+
+.title .p {
+    display: block;
+    font-size: 30px;
+    text-transform: none;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    color: black;
+}
+
+.title__p {
+    font-size: 15px;
+    font-family: marri;
+    line-height: 2;
+    text-shadow: none;
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 10px 80px;
+    background-color: transparent;
+    outline: none;
+    font-size: 50px;
+    color: black;
+    width: 700px;
+    height: 100px;
+    margin: 0;
+    border: 3px solid white;
+    padding-right: 0;
+}
+
+.layer-3, .layer-4, .layer-5, .layer-6 {
+    pointer-events: none;
+}
+
+.layer-2 {
+    transform: translateZ(160px)
+}
+
+.list {
+    display: block;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.button {
+    font-size: 50px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.task {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.shadow {
+    display: block;
+    width: 700px;
+}
+
+.complete {
+    margin: 0 30px;
+}
+
+.ToDoList {
+    user-select: none;
+}
+

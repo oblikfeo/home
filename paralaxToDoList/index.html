@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <section class="layers">
+        <div class="layers__container"> 
+            <div class="layers__item layer-1" style="background-image: url(img/fon1.jpg);"></div>
+
+            <div class="layers__item layer-2">
+                <div class="title">
+                    <h1 class="ToDoList">To Do List <span class="p">ЕЖЕДНЕВНИК</span></h1>
+                    <div class="title__p">made by oblik</div>
+                        <div>
+                            <input type="text" class="text">
+                            <button class="button add">✔</button>
+                            <button class="button del">X</button>
+                        </div>
+                            <div class="list">
+                                <div class="list tasklist">
+                                </div>
+                            </div>
+                </div>
+            </div> 
+            <div class="layers__item layer-3" style="background-image: url(img/leaf3.png);"></div>
+            <div class="layers__item layer-4" style="background-image: url(img/water.png);"></div>
+            <div class="layers__item layer-5" style="background-image: url(img/leaf2.png);"></div>
+            <div class="layers__item layer-6" style="background-image: url(img/rain.png);"></div>  
+       </div>
+    </section>
+</body>
+    <template class="template">
+        <div class="task">
+            <div class="shadow"></div>
+                <button data-action="done" class="button complete">✔</button>
+                <button data-action="delete" class="button delete">X</button>
+        </div>
+    </template>
+</html>
