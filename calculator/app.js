@@ -21,4 +21,5 @@ let operation
 
 addEventListener('click', (e) => {
     console.log()
+    console.log()
 })
