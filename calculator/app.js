@@ -27,7 +27,7 @@ addEventListener('click', (e) => {
                 resultatElement.innerText += '-'
             };
         case 'x': 
-            if (e.target.value == "*") {
+            if (e.target.value == "x") {
             resultatElement.innerText += '*'
             };
         case '/': 
