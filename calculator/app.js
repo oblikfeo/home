@@ -1,5 +1,5 @@
 // кнопка отчищения A/C
-const resultatElement = document.getElementById('resultat')
+const resultatElement = document.querySelector('.result')
 const clearBut = document.querySelector('.AC')
 clearBut.addEventListener('click', (e) => {
     resultatElement.innerText = ''
@@ -14,44 +14,33 @@ function butNum(e) {
 }
 
 // функция сбора данных
-let first
-let second
-let operation
-let sum
+let math
 
 addEventListener('click', (e) => {
     switch(e.target.value) {
         case '+': 
             if (e.target.value == "+") {
-            first = resultatElement.textContent
-            resultatElement.innerText = ''
-            sum = first + second
+            resultatElement.innerText += '+'
             };
         case '-':
             if (e.target.value == "-") {
-                first = resultatElement.textContent
-                resultatElement.innerText = ''
-                operation = '-'
+                resultatElement.innerText += '-'
             };
         case 'x': 
-            if (e.target.value == "x") {
-            first = resultatElement.textContent
-            resultatElement.innerText = ''
-            operation = '*'
+            if (e.target.value == "*") {
+            resultatElement.innerText += '*'
             };
         case '/': 
             if (e.target.value == "/") {
                 first = resultatElement.textContent
-                resultatElement.innerText = ''
-                operation = '/'
+                resultatElement.innerText += '/'
             };
         case '=':
-            if (first) {
-                second = resultatElement.textContent
-                console.log(sum)
+            if (e.target.value == "=") {
+                math = eval(resultatElement.textContent)
+                resultatElement.innerText += ('=' + math)
             }
+            
         }
-        console.log(first)
-        console.log(second)
 })
 
