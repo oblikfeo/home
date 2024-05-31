@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+
+/*стили поля для игры*/
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+.pole {
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+    width: 125px;
+    height: 125px;
+    border: 1px solid black;
+}
+
+.pole:hover {
+    border: 8px solid yellow;
+
+}
+
+.pole:focus {
+    border: 5px solid red;
+}
+
+/*стили клавиатуры*/
+
+.keyboard1 {
+    margin: 100px auto auto auto;
+    width: 644px;
+}
+
+.keyboard2 {
+    margin: 10px auto auto auto;
+    width: 590px;
+}
+
+.keyboard3 {
+    margin: 10px auto auto auto;
+    width: 482px;
+}
+
+.but {
+    width: 50px;
+    height: 50px;
+}
