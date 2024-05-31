@@ -15,32 +15,38 @@ function butNum(e) {
 
 // функция сбора данных
 let math
+let value1 
+let value2
 
 addEventListener('click', (e) => {
     switch(e.target.value) {
         case '+': 
-            if (e.target.value == "+") {
-            resultatElement.innerText += '+'
-            };
+            value1 = resultatElement.textContent
+            resultatElement.innerText = '+'
+            math = Number(value1) + Number(value2);
+            break
         case '-':
-            if (e.target.value == "-") {
-                resultatElement.innerText += '-'
-            };
+                value1 = resultatElement.textContent
+                resultatElement.innerText = '-'
+                math = Number(value1) - Number(value2);
+            break
         case 'x': 
-            if (e.target.value == "x") {
-            resultatElement.innerText += '*'
-            };
+                value1 = resultatElement.textContent
+                resultatElement.innerText = '*'
+                math = Number(value1) * Number(value2);
+            break
         case '/': 
-            if (e.target.value == "/") {
-                first = resultatElement.textContent
-                resultatElement.innerText += '/'
-            };
+                value1 = resultatElement.textContent
+                resultatElement.innerText = '/'
+                math = Number(value1) / Number(value2);
+                break
         case '=':
-            if (e.target.value == "=") {
-                math = eval(resultatElement.textContent)
-                resultatElement.innerText += ('=' + math)
-            }
-            
+                if (!!value1) {
+                    value2 = resultatElement.textContent
+                    resultatElement.innerText = ''
+                    console.log(math)
+                }
+                break
         }
 })
 
