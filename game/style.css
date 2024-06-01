@@ -1,17 +1,17 @@
 * {
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 
 /*стили поля для игры*/
 
 .game {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    width: 500px;
 }
 
 .pole {
@@ -25,7 +25,6 @@
 
 .pole:hover {
     border: 8px solid yellow;
-
 }
 
 .pole:focus {
@@ -35,16 +34,19 @@
 /*стили клавиатуры*/
 
 .keyboard1 {
+    display: none;
     margin: 100px auto auto auto;
     width: 644px;
 }
 
 .keyboard2 {
+    display: none;
     margin: 10px auto auto auto;
     width: 590px;
 }
 
 .keyboard3 {
+    display: none;
     margin: 10px auto auto auto;
     width: 482px;
 }
@@ -52,4 +54,16 @@
 .but {
     width: 50px;
     height: 50px;
+    font-size: 30px;
+}
+
+/*стили правил*/
+
+
+.rules {
+    display: flex;
+    font-size: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
