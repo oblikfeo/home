@@ -70,7 +70,9 @@ function yellow14() {
 check1 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case1 = document.getElementById('1')
-    if (arr.includes(case1.value)) {
+    if (case1.value == 'м') {
+        case1.setAttribute('style', 'background-color: green')
+    } else if (arr.includes(case1.value)) {
         case1.setAttribute('style', 'background-color: yellow')
     } return
 }
