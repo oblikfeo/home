@@ -9,6 +9,8 @@ const key3 = document.querySelector('.keyboard3')
 const body = document.querySelector('body')
 const key = document.querySelectorAll('.but')
 const word = document.querySelector('.but')
+const butWord = document.querySelector('.butWord')
+const del = document.querySelector('.delete')
 
 
 startgame.addEventListener('click', start)
@@ -19,6 +21,8 @@ function start() {
     key2.setAttribute('style', 'display: block')
     key3.setAttribute('style', 'display: block')
     startgame.setAttribute('style', 'display: none')
+    butWord.setAttribute('style', 'display: flex')
+    del.setAttribute('style', 'display: flex')
     darkmode()
 }
 
@@ -234,4 +238,23 @@ check12 = () => {
         case12.setAttribute('style', 'background-color: yellow')
     } return
 }
+//функционал кнопок под полем
+const word1 = document.querySelector('.word1')
+const word2 = document.querySelector('.word2')
+const word3 = document.querySelector('.word3')
+
+word1.addEventListener('click', () => {
+    yellow14()
+    word1.setAttribute('style', 'display: none')
+})
+
+word2.addEventListener('click', () => {
+    yellow58()
+    word2.setAttribute('style', 'display: none')
+})
+
+word3.addEventListener('click', () => {
+    yellow912()
+    word3.setAttribute('style', 'display: none')
+})
 

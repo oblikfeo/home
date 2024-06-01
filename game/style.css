@@ -24,11 +24,11 @@
 }
 
 .pole:hover {
-    border: 8px solid yellow;
+    border: 9px solid rgb(245, 195, 232);
 }
 
 .pole:focus {
-    border: 5px solid red;
+    border: 9px solid rgb(245, 93, 207);
 }
 
 /*стили клавиатуры*/
@@ -66,4 +66,21 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+
+/*кпноки проверки*/
+.butWord {
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+.delete {
+    display: none;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
