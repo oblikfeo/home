@@ -72,6 +72,8 @@ check1 = () => {
     let case1 = document.getElementById('1')
     if (case1.value == 'м') {
         case1.setAttribute('style', 'background-color: green')
+        let case13 = document.getElementById('13')
+        case13.value = 'м'
     } else if (arr.includes(case1.value)) {
         case1.setAttribute('style', 'background-color: yellow')
     } return
@@ -80,7 +82,11 @@ check1 = () => {
 check2 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case2 = document.getElementById('2')
-    if (arr.includes(case2.value)) {
+    if (case2.value == 'а') {
+        case2.setAttribute('style', 'background-color: green')
+        let case14 = document.getElementById('14')
+        case14.value = 'а'
+    } else if (arr.includes(case2.value)) {
         case2.setAttribute('style', 'background-color: yellow')
     } return
 }
@@ -88,7 +94,11 @@ check2 = () => {
 check3 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case3 = document.getElementById('3')
-    if (arr.includes(case3.value)) {
+    if (case3.value == 'к') {
+        case3.setAttribute('style', 'background-color: green')
+        let case15 = document.getElementById('15')
+        case15.value = 'к'
+    } else if (arr.includes(case3.value)) {
         case3.setAttribute('style', 'background-color: yellow')
     } return
 }
@@ -96,7 +106,11 @@ check3 = () => {
 check4 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case4 = document.getElementById('4')
-    if (arr.includes(case4.value)) {
+    if (case4.value == 'с') {
+        case4.setAttribute('style', 'background-color: green')
+        let case16 = document.getElementById('16')
+        case16.value = 'с'
+    } else if (arr.includes(case4.value)) {
         case4.setAttribute('style', 'background-color: yellow')
     } return
 }
@@ -116,7 +130,11 @@ function yellow58() {
 check5 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case5 = document.getElementById('5')
-    if (arr.includes(case5.value)) {
+    if (case5.value == 'м') {
+        case5.setAttribute('style', 'background-color: green')
+        let case13 = document.getElementById('13')
+        case13.value = 'м'
+    } else if (arr.includes(case5.value)) {
         case5.setAttribute('style', 'background-color: yellow')
     } return
 }
@@ -124,7 +142,11 @@ check5 = () => {
 check6 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case6 = document.getElementById('6')
-    if (arr.includes(case6.value)) {
+    if (case6.value == 'а') {
+        case6.setAttribute('style', 'background-color: green')
+        let case14 = document.getElementById('14')
+        case14.value = 'а'
+    } else if (arr.includes(case6.value)) {
         case6.setAttribute('style', 'background-color: yellow')
     } return
 }
@@ -132,7 +154,11 @@ check6 = () => {
 check7 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case7 = document.getElementById('7')
-    if (arr.includes(case7.value)) {
+    if (case7.value == 'к') {
+        case7.setAttribute('style', 'background-color: green')
+        case3.setAttribute('style', 'background-color: green')
+        let case15 = document.getElementById('15')
+    } else if (arr.includes(case7.value)) {
         case7.setAttribute('style', 'background-color: yellow')
     } return
 }
@@ -140,7 +166,72 @@ check7 = () => {
 check8 = () => {
     let arr = ['м', 'а', 'к', 'с']
     let case8 = document.getElementById('8')
-    if (arr.includes(case8.value)) {
+    if (case8.value == 'с') {
+        case8.setAttribute('style', 'background-color: green')
+        let case16 = document.getElementById('16')
+        case16.value = 'с'
+    } else if (arr.includes(case8.value)) {
         case8.setAttribute('style', 'background-color: yellow')
     } return
 }
+
+function yellow912() {
+    let case9 = document.getElementById('9')
+    let case10 = document.getElementById('10')
+    let case11 = document.getElementById('11')
+    let case12 = document.getElementById('12')
+    let arr1 = [case9, case10, case11, case12]
+    check9()
+    check10()
+    check11()
+    check12()
+}
+
+check9 = () => {
+    let arr = ['м', 'а', 'к', 'с']
+    let case9 = document.getElementById('9')
+    if (case9.value == 'м') {
+        case9.setAttribute('style', 'background-color: green')
+        let case13 = document.getElementById('13')
+        case13.value = 'м'
+    } else if (arr.includes(case9.value)) {
+        case9.setAttribute('style', 'background-color: yellow')
+    } return
+}
+
+check10 = () => {
+    let arr = ['м', 'а', 'к', 'с']
+    let case10 = document.getElementById('10')
+    if (case10.value == 'а') {
+        case10.setAttribute('style', 'background-color: green')
+        let case14 = document.getElementById('14')
+        case14.value = 'а'
+    } else if (arr.includes(case10.value)) {
+        case10.setAttribute('style', 'background-color: yellow')
+    } return
+}
+
+check11 = () => {
+    let arr = ['м', 'а', 'к', 'с']
+    let case11 = document.getElementById('11')
+    if (case11.value == 'к') {
+        case11.setAttribute('style', 'background-color: green')
+        let case15 = document.getElementById('15')
+        case15.value = 'к'
+    } else if (arr.includes(case11.value)) {
+        case11.setAttribute('style', 'background-color: yellow')
+    } return
+}
+
+check12 = () => {
+    let arr = ['м', 'а', 'к', 'с']
+    let case12 = document.getElementById('12')
+    if (case12.value == 'с') {
+        case12.setAttribute('style', 'background-color: green')
+        let case16 = document.getElementById('16')
+        case16.value = 'с'
+    } else if (arr.includes(case12.value)) {
+        case12.setAttribute('style', 'background-color: yellow')
+    } return
+}
+
