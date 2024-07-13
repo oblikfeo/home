@@ -43,7 +43,7 @@
     border-radius: 5px;
 }
 
-.active {
+.false {
     display: flex;
     justify-content: space-between;
     width: 450px;
