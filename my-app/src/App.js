@@ -1,9 +1,22 @@
 import React from 'react';
+import Menu from './components/Menu'
+import Title from './components/Title';
+import InfoBox from './components/InfoBox';
+
+
 
 function App() {
 	return <div>
-		<h1 className='learn'>Начинаю изучать фреймворк React</h1>
+		<Menu />
+		<Title />
+		<section className='infoBar'>
+			<InfoBox text='0 заказов'/>
+			<InfoBox text='123'/>
+			<InfoBox text='123'/>
+			<InfoBox text='123'/>
+		</section>
 	</div>;
+	
 }
 
 export default App;
