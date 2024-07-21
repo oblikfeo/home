@@ -48,11 +48,43 @@ body {
 }
 
 .infoBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   height: 5rem;
   width: 10rem;
   border-radius: 5%;
   background-color: rgb(141, 141, 141);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
+}
+
+.search {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.addBut {
+  margin-left: 12rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  background-color: #009a00;
+  color: white;
+  border-radius: 5%;
+  border: 2px solid green;
+}
+
+.searchBut {
+  font-size: 1.5rem;
+  color: white;
+  background-color: blue;
+}
+
+.head {
+  margin-left: 12rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }

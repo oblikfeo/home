@@ -1,7 +1,8 @@
-export default function InfoBox({text}) {
+export default function InfoBox({text, type, color}) {
     return (
-        <div className='infoBox'>
-            {text}
+        <div style={{ backgroundColor: color }} className='infoBox'>
+            <span>{text}</span>
+            <span>{type}</span>
 		</div>
     )
 }
