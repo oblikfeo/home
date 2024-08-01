@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    background-color: rgb(0 185 255);
+}
+
+.input {
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 1rem;
+}
+
+.location {
+    font-size: 1rem;
+    padding: 2px 0px 2px 25px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.weather:hover {
+    background-color: #4fcfff;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(235, 235, 211);
+    border-radius: 2rem;
+}
+
+.weatherIcon {
+    margin-left: auto;
+    height: 2.25rem;
+    width: 3.75rem;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h12 {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 30rem;
+    width: 7rem;
+    background-color: rgb(235, 235, 211);
+    border-radius: 2rem;
+}
+
+.timeFont {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+
+}
