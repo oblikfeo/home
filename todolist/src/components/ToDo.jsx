@@ -6,9 +6,8 @@ export default function ToDo() {
     const [input, setInput] =  useState('')
 
     const addTask = () => {
-            setTasks([...tasks, input])
-        }
-
+        setTasks([...tasks, input])
+    }
 
     return(
         <>
@@ -30,12 +29,12 @@ export default function ToDo() {
         </div>
         <div className="tasksList">
             {tasks.map((each, index) => (
-                <div key={index}>
-                    {each}<button
-                    onClick={() => setTasks(
+                <div className="task" key={index}>
+                    {each}
+                    <button className="delBut" onClick={() => setTasks(
                         tasks.filter((item, del) => del !== index)
                     )}
-                    >delete</button>
+                    ></button>
                 </div>
             ))}
         </div>

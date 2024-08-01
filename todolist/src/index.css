@@ -48,3 +48,21 @@ h3 {
   font-size: 2rem;
   color: white;
 }
+
+.delBut {
+  margin-left: 1rem;
+  padding-right: 2rem;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+}
+
+.task {
+  display: flex;
+}
+
+.doneBut {
+  margin-left: 1rem;
+  padding-right: 2rem;
+  background-color: rgb(0, 255, 136);
+  border-radius: 50%;
+}
